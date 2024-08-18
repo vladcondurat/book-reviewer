@@ -1,0 +1,29 @@
+.centered-404 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.not-found-text {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.not-found-p {
+  font-size: 16px;
+  color: #666;
+}
+
+@media (max-width: 550px) {
+  .not-found-p {
+    font-size: 14px;
+  }
+
+  .centered-404 {
+    padding: 0 20px;
+  }
+}

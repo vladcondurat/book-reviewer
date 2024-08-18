@@ -1,0 +1,421 @@
+.book-page-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 12px;
+  max-width: 1250px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.book-details {
+  padding: 10px;
+  text-align: center;
+  /* align-self: flex-start; */
+}
+
+.book-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-page-tags {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.book-page-tag {
+  background-color: #e1e1e1;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+.book-page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-page-author {
+  font-size: 20px;
+  color: #666;
+}
+
+.book-page-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #555;
+  padding-bottom: 20px;
+}
+
+.book-page-other-readers {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #777;
+}
+
+.book-page-book-cover {
+  max-width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  width: 70%;
+  background-color: #333;
+  color: white;
+}
+
+.add-a-review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 12px;
+}
+
+.add-a-review-title {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  width: 100%;
+  text-align: left;
+}
+
+.add-a-review-textarea {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 2px;
+  border: 2px solid #d1d5db;
+  padding: 6px 10px;
+  font-size: 14px;
+  resize: none;
+}
+
+.add-a-review-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.add-a-review-progress {
+  font-size: 14px;
+}
+
+.add-a-review-bottom-right-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.add-a-review-submit {
+  background-color: #be123c;
+  color: white;
+  height: 24px;
+  border-radius: 2px;
+  width: 90px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.075s linear;
+}
+
+.add-a-review-submit:active {
+  transform: translate(1px, 2px);
+}
+
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: flex-start;
+  width: 100%;
+}
+
+.review-profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #333;
+}
+
+.review-header-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.review-username {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.review-header-numbers-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-header-rating {
+  display: flex;
+}
+
+.star-wrapper {
+  padding: 1px;
+}
+
+.review-header-percentage {
+  font-size: 12px;
+  color: #333333;
+}
+
+.review-content {
+  font-size: 14px;
+  color: #333333;
+  text-align: start;
+  width: 100%;
+  padding: 0 12px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.add-a-review-form {
+  width: 100%;
+}
+
+.book-cover-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .book-page-container {
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 50px;
+    gap: 0;
+  }
+
+  .book-details {
+    padding: 0 10px 20px 20px;
+    flex: 1;
+    text-align: left;
+  }
+
+  .book-page-tags {
+    justify-content: flex-start;
+  }
+
+  .book-page-book-cover {
+    display: block;
+    width: 80%;
+    aspect-ratio: 250 / 370;
+    height: auto;
+    max-height: 83vh;
+  }
+
+  .book-cover-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 81px - 48px);
+    width: 40%;
+    aspect-ratio: 1.48;
+  }
+}
+
+@media (max-width: 420px) {
+  .add-a-review-progress {
+    font-size: 12px;
+    align-self: flex-start;
+  }
+  .add-a-review-submit {
+    width: 70px;
+  }
+  .add-a-review-bottom-right-container {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 350px) {
+  .book-page-tag {
+    font-size: 12px;
+    padding: 5px 6px;
+  }
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.review-rating input {
+  display: none;
+}
+
+.review-rating label {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 0.2s linear;
+}
+
+.review-rating input ~ label svg path {
+  transition: fill 0.2s linear;
+}
+
+.review-rating input:checked ~ label svg path {
+  fill: #e4a70a;
+}
+
+.current-progress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.current-progress-bar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+.current-progress-title {
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+}
+
+.current-progress-bar {
+  width: 100%;
+  max-width: 350px;
+  height: 20px;
+  background-color: #d1d5db;
+  border-radius: 2px;
+  position: relative;
+}
+
+.current-progress-filled-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #be123c;
+  border-radius: 2px;
+}
+
+.current-progress-number {
+  font-size: 14px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 10px;
+  transition: width 0.5s linear;
+}
+
+.current-progress-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.current-progress-form {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.current-progress-input {
+  width: 100%;
+  max-width: 160px;
+  height: 24px;
+  border-radius: 2px;
+  border: 1px solid #d1d5db;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+.current-progress-input::after {
+  content: '%';
+}
+
+.current-progress-input:focus {
+  border-color: #be123c;
+  outline: none;
+}
+
+.current-progress-submit {
+  background-color: #be123c;
+  color: white;
+  height: 24px;
+  border-radius: 2px;
+  width: 90px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.075s linear;
+}
+
+.current-progress-submit:active {
+  transform: translate(1px, 2px);
+}
+
+.delete-book-button {
+  background-color: #be123c;
+  color: white;
+  height: 24px;
+  border-radius: 2px;
+  width: 90px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: transform 0.075s linear;
+  margin-bottom: 10px;
+}
+
+.delete-book-button:active {
+  transform: translate(1px, 2px);
+}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="/src/pages/register/register.css" />
+    <title>Register Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Register Account</h1>
+      <form class="form" id="register-form">
+        <div class="input-group">
+          <label class="register-label" for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" class="input" />
+        </div>
+        <div class="input-group">
+          <label class="register-label" for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" class="input" />
+        </div>
+        <div class="input-group">
+          <label class="register-label" for="password">Password</label>
+          <input type="password" id="password" placeholder="Create a password" class="input" />
+        </div>
+        <div class="input-group">
+          <label class="register-label" for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" placeholder="Confirm your password" class="input" />
+        </div>
+        <div class="input-group">
+          <label class="register-label" for="avatar">Avatar</label>
+          <label for="avatar" class="input file-input">
+            <div class="file-input-dashed">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" id="avatar-svg">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.5 1.2C6.53533 1.2 1.7 6.03533 1.7 12C1.7 17.9647 6.53533 22.8 12.5 22.8C18.4647 22.8 23.3 17.9647 23.3 12C23.3 6.03533 18.4647 1.2 12.5 1.2ZM0.5 12C0.5 5.37258 5.87258 0 12.5 0C19.1274 0 24.5 5.37258 24.5 12C24.5 18.6274 19.1274 24 12.5 24C5.87258 24 0.5 18.6274 0.5 12ZM12.5 5.26165C12.8314 5.26165 13.1 5.53027 13.1 5.86165V11.4H18.6385C18.9698 11.4 19.2385 11.6686 19.2385 12C19.2385 12.3314 18.9698 12.6 18.6385 12.6H13.1V18.1386C13.1 18.4699 12.8314 18.7386 12.5 18.7386C12.1686 18.7386 11.9 18.4699 11.9 18.1386V12.6H6.36154C6.03017 12.6 5.76154 12.3314 5.76154 12C5.76154 11.6686 6.03017 11.4 6.36154 11.4H11.9V5.86165C11.9 5.53027 12.1686 5.26165 12.5 5.26165Z"
+                  fill="#6B7280"
+                />
+              </svg>
+              <img id="avatar-preview" class="file-input-preview" />
+            </div>
+          </label>
+          <input type="file" id="avatar" class="input file-input" />
+        </div>
+        <div class="actions">
+          <div class="login-link">Already have an account? <a href="#signin" class="link">Login now</a></div>
+          <button type="submit" class="button">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

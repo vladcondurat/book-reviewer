@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/pages/signin/signin.css" />
+    <link rel="stylesheet" href="signin.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h1 class="form-title">Login</h1>
+        <form class="signin-form" id="signin-form">
+          <div class="form-group">
+            <label for="username">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" class="input-field" />
+          </div>
+          <div class="form-group">
+            <div class="password-labels-container">
+              <label for="password">Password</label>
+              <a href="#forgot-password" class="forgot-password-anchor">Forgot password?</a>
+            </div>
+            <input type="password" id="password" placeholder="Enter your password" class="input-field" />
+          </div>
+          <div class="options">
+            <div class="register-link">Don't have an account? <a href="#register" class="link">Register now</a></div>
+            <button type="submit" class="submit-button">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

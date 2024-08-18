@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/pages/add-book-form/add-book-form.css" />
+    <link rel="stylesheet" href="./add-book-form.css" />
+    <title>Book Entry Form</title>
+  </head>
+  <body>
+    <form class="add-book-form" id="add-book-form">
+      <main class="main-container">
+        <div id="first-column" class="column">
+          <div class="form-group">
+            <label for="book-title" class="label">Title</label>
+            <input required type="text" id="book-title" placeholder="Book Name" class="input" />
+          </div>
+
+          <div class="form-group">
+            <label for="book-author" class="label">Author</label>
+            <input required type="text" id="book-author" placeholder="Ex. Jules Verne" class="input" />
+          </div>
+
+          <div class="form-group">
+            <label for="publishing-house" class="label">Publishing House</label>
+            <input required type="text" id="publishing-house" placeholder="Editura Primal" class="input" />
+          </div>
+
+          <div class="form-group">
+            <label for="book-edition" class="label">Edition</label>
+            <input required type="text" id="book-edition" placeholder="Ex. First Edition" class="input" />
+          </div>
+
+          <div class="form-group">
+            <label for="launch-year" class="label">Launch Year</label>
+            <input required type="number" id="launch-year" placeholder="Pick a year" class="input" min="1900" max="2024" />
+          </div>
+        </div>
+
+        <div id="second-column" class="column">
+          <div class="form-group">
+            <label for="book-genres" class="label">Genres</label>
+            <!-- <input type="text" id="book-genres" placeholder="Science Fiction" class="input" /> -->
+            <div class="dropdown-container">
+              <select required id="book-genres" class="input dropdown-select">
+                <option value="" disabled selected>Select a genre</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>
+                <option value="Science Fiction">Science Fiction</option>
+                <option value="Horror">Horror</option>
+                <option value="Classics">Classics</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="book-description" class="label">Description</label>
+            <textarea required id="book-description" placeholder="Add a description" class="textarea"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="book-cover-input" class="label">Book Cover</label>
+            <label for="book-cover" class="input file-input">
+              <div class="file-input-dashed">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none" id="file-input-svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.5 1.2C6.53533 1.2 1.7 6.03533 1.7 12C1.7 17.9647 6.53533 22.8 12.5 22.8C18.4647 22.8 23.3 17.9647 23.3 12C23.3 6.03533 18.4647 1.2 12.5 1.2ZM0.5 12C0.5 5.37258 5.87258 0 12.5 0C19.1274 0 24.5 5.37258 24.5 12C24.5 18.6274 19.1274 24 12.5 24C5.87258 24 0.5 18.6274 0.5 12ZM12.5 5.26165C12.8314 5.26165 13.1 5.53027 13.1 5.86165V11.4H18.6385C18.9698 11.4 19.2385 11.6686 19.2385 12C19.2385 12.3314 18.9698 12.6 18.6385 12.6H13.1V18.1386C13.1 18.4699 12.8314 18.7386 12.5 18.7386C12.1686 18.7386 11.9 18.4699 11.9 18.1386V12.6H6.36154C6.03017 12.6 5.76154 12.3314 5.76154 12C5.76154 11.6686 6.03017 11.4 6.36154 11.4H11.9V5.86165C11.9 5.53027 12.1686 5.26165 12.5 5.26165Z"
+                    fill="#6B7280"
+                  />
+                </svg>
+                <img id="file-input-preview" class="file-input-preview" />
+              </div>
+            </label>
+            <input required type="file" id="book-cover" class="input file-input" />
+          </div>
+          <div class="submit-button-wrapper">
+            <button type="submit" class="submit-button">Submit</button>
+          </div>
+        </div>
+      </main>
+    </form>
+  </body>
+</html>

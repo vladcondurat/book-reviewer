@@ -1,0 +1,141 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 950px;
+  align-items: center;
+}
+
+.add-book-form {
+  display: flex;
+  width: 100%;
+  max-width: 950px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 384px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.input,
+.textarea {
+  border: 1px solid #d1d5db;
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 2px;
+  padding: 8px;
+  width: 100%;
+}
+
+.input:focus,
+.textarea:focus {
+  outline: 2px solid #be123c;
+  /* border-color: #be123c; */
+  /* box-shadow: 0 0 0 2px #be123c; */
+}
+
+.textarea {
+  height: 128px;
+  resize: none;
+}
+
+@media screen and (min-width: 900px) {
+  .main-container {
+    flex-direction: row;
+    gap: 24px;
+    align-items: unset;
+  }
+}
+
+.submit-button-wrapper {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: flex-end;
+  height: 100%;
+  width: 100%;
+}
+
+.submit-button {
+  background-color: #be123c;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.075s linear;
+  width: 100%;
+}
+
+.submit-button:active {
+  transform: translate(1px, 2px);
+}
+
+.file-input {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.file-input-dashed {
+  border: 1px dashed #6b7280;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0;
+  padding: 6px 8px;
+  height: 100%;
+  width: 100px;
+}
+
+.file-input-dashed img {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.file-input-dashed img.active {
+  display: block;
+  border-radius: 2px;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}

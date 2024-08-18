@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="/BookHubLogo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="/src/components/alert/alert.css" />
+    <title>BookHub</title>
+    <meta name="description" content="A hub for all your book needs." />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="logo">
+        <img src="/BookHubLogo.svg" alt="BookHub Logo" />
+      </a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" class="search-input" />
+        <div class="search-results-container"><div class="no-results-found">No results found</div></div>
+      </div>
+
+      <div class="nav-links">
+        <a href="#help" class="nav-link">Help</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#stats" class="nav-link">Stats</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#signin" class="nav-link">Sign in</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div id="modal-button" class="modal-lines">
+        <div class="modal-line"></div>
+        <div class="modal-line"></div>
+        <div class="modal-line"></div>
+      </div>
+    </div>
+    <div id="modal" class="modal-overlay">
+      <div id="modal-close" class="modal-close">x</div>
+      <div class="nav-modal-links">
+        <a href="#help" class="nav-link">Help</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#stats" class="nav-link">Stats</a>
+        <a href="#news" class="nav-link">News</a>
+        <a href="#signin" class="nav-link">Sign in</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </div>
+
+    <div id="alert-container"></div>
+    <div id="content" class="content"></div>
+
+    <div class="footer">© 2024 BookHub by Deaconu Denis & Condurat Vlad</div>
+
+    <script type="module" src="./src/router/router.ts"></script>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
